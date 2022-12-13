@@ -1,15 +1,22 @@
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: #2196F3;
+    grid-template-columns: repeat(10,1fr);
+    background-color: #758a9b;
     padding: 10px;
-    height: 100%;
   }
   
   .grid-item {
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
+  }
+
+  .coin{
+    width: 6px;
+    height: 6px;
+    display: inline-block;
+    margin: 2px;
+    border-radius: 50%;
   }

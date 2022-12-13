@@ -1,0 +1,19 @@
+<div>Board</div>
+<div class="grid-container">
+<ng-container *ngFor="let row of board">
+    <ng-container *ngFor="let nums of row">
+        <div class="grid-item">
+            <span *ngIf="player1Position == nums" class="coin" style="background-color: red;"></span>
+            <span *ngIf="player2Position == nums" class="coin" style="background-color: blueviolet;"></span>
+            <!-- <ng-container ></ng-container>
+            <ng-container *ngIf="snake.checkIfSnakeHead(nums) != -1">
+                Snake Head
+            </ng-container>
+            <ng-container *ngIf="snake.getSnakeTail(nums) == nums">
+                Snake Tail
+            </ng-container> -->
+            {{nums}}
+        </div>
+    </ng-container>
+</ng-container>
+</div>

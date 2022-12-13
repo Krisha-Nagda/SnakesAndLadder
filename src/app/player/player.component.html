@@ -1,0 +1,12 @@
+<div>
+    Players
+</div>
+<div *ngFor="let player of players">
+    {{player.name}}
+    <button *ngIf="player.id == 1" (click)="playerRollDice(player.id,player.name)" class="rollDice" [id]="player.id">Roll Dice</button>
+    <button  *ngIf="player.id != 1" (click)="playerRollDice(player.id,player.name)" class="rollDice" [id]="player.id" disabled>Roll Dice</button>
+</div>
+
+<div>
+    {{statusString}}
+</div>
